@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <title> Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f7f1;
+            color: #3d3d3d;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #8f8be6;
+            color: #fff;
+            border-bottom: 2px solid #e7b4a9;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+        nav {
+            text-align: center;
+            background-color: #f2e8c6;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #3d3d3d;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #fda085;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            background-color: #fda085;
+            width: 0;
+            transition: width 0.3s ease;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        .container {
+            width: 80%;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 10px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #3d3d3d;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .about {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+        .about img {
+            width: 45%;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .about img:hover {
+            transform: scale(1.05);
+        }
+        .about div {
+            width: 50%;
+            text-align: left;
+        }
+        .about div p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .works ul {
+            list-style: none;
+            margin-top: 30px;
+            padding-left: 0;
+        }
+        .works li {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .works li:hover {
+            transform: translateX(10px);
+            color: #fda085;
+        }
+        .works li span {
+            font-size: 1.1rem;
+            color: #888;
+        }
+        .contact {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .contact h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #3d3d3d;
+        }
+        .contact p {
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+        .contact a {
+            font-size: 1.1rem;
+            color: #3d3d3d;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #fda085;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>swara nikam</h1>
+        <p>A Passionate Writer | Storyteller | Dreamer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="about">
+            <img src="swara.jpg" alt="Your Image">
+            <div>
+                <h2 class="section-title">About Me</h2>
+                <p>Hi, I'm swara. I'm a writer with a deep passion for exploring the human experience through words. Whether through short stories, novels, or articles, I aim to weave narratives that resonate with the soul.</p>
+                <p>In my writing, I dive into themes of love, identity, and self-discovery, with a focus on bringing emotional depth to each character and scene.</p>
+            </div>
+        </section>
+        <section id="works" class="works">
+            <h2 class="section-title">My Works</h2>
+            <ul>
+                <li><strong>"120 Best Poems By India's Best Writers"</strong> - A poetry book that explores  themes ranging from
+                     nature’s splendor to the complexities of the human heart, this collection offers solace, inspiration, and a 
+                     profound appreciation for the power of poetry to illuminate the human experience.<span>(2024)</span></li>
+                <li><strong>Pensive E-Magazine</strong> - Virtual magazine <span>(2023,2024)</span></li>
+                <li><strong>Inked</strong> - A poetry book <span>(upcoming)</span></li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h3>Get in Touch</h3>
+            <p>If you're interested in my work or just want to say hello, feel free to reach out!</p>
+            <p>Email: <a href="mailto:your.email@example.com">swaranikam576@gmail.com</a></p>
+           
+        </section>
+    </div>   
+</body>
+</html>
